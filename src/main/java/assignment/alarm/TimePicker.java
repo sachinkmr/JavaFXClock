@@ -16,7 +16,6 @@ public class TimePicker {
     public static String getSelecetdTime() {
         JFXTimePicker timePicker = new JFXTimePicker(LocalTime.now());
         timePicker.setEditable(false);
-
         Stage window = new Stage();
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("Select Alarm Time");

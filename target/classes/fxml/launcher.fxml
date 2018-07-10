@@ -22,7 +22,7 @@
         </StackPane>
     </center>
     <bottom>
-        <Pane id="buttonPanel" minHeight="160.0" minWidth="380.0" prefHeight="160.0" prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="BOTTOM_CENTER">
+        <Pane id="buttonPanel" fx:id="buttonPanel" minHeight="160.0" minWidth="380.0" prefHeight="160.0" prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="BOTTOM_CENTER">
             <children>
                 <Label id="alarmLabel" layoutX="202.0" layoutY="17.0" prefHeight="17.0" prefWidth="40.0" text="Alarm:" />
                 <ComboBox id="switchClockButton" fx:id="switchClockButton" layoutX="14.0" layoutY="12.0" prefHeight="25.0" prefWidth="150.0" promptText="Switch Clock" />
@@ -37,7 +37,7 @@
                 <Label layoutX="202.0" layoutY="52.0" prefHeight="17.0" text="Foreground Color:" />
                 <ColorPicker fx:id="bgColorButton" layoutX="325.0" layoutY="89.0" prefHeight="25.0" prefWidth="41.0" promptText="Background Color" />
                 <Label layoutX="202.0" layoutY="93.0" prefHeight="17.0" prefWidth="113.0" text="Background Color:" />
-                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="310.0" layoutY="-1.0" prefHeight="25.0" />
+                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="310.0" layoutY="-1.0" prefHeight="25.0" prefWidth="70.0"/>
             </children>
             <BorderPane.margin>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

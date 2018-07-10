@@ -1,25 +1,19 @@
 package assignment;
 
-import assignment.alarm.Alarm;
 import assignment.alarm.AlarmUI;
 import assignment.clocks.Clock;
 import assignment.utils.HelperUtils;
 import com.jfoenix.controls.JFXToggleButton;
-import javafx.animation.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
+import javafx.scene.control.Button;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Tooltip;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
-import javafx.util.Duration;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
@@ -27,8 +21,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 public class LauncherController implements Initializable {
-    private Map<String, Clock> clocks;
-
     @FXML
     private StackPane clocksPane;
     @FXML
@@ -47,6 +39,9 @@ public class LauncherController implements Initializable {
     private ColorPicker bgColorButton;
     @FXML
     private JFXToggleButton alarmButton;
+    @FXML
+    private Pane buttonPanel;
+    private Map<String, Clock> clocks;
 
     @FXML
     @Override
@@ -56,31 +51,32 @@ public class LauncherController implements Initializable {
 
         clocks = new HashMap<>();
         AlarmUI alarmUI = new AlarmUI(alarmButton);
-        alarmUI.initAlarmUI();
+        buttonPanel.getChildren().add(alarmUI.initAlarmUI());
 
-
+        bindColorButtonsToClock();
         resetAllColorsButton.setOnAction((event) -> resetAllColors());
+
         switchClockButton.valueProperty().addListener((ov, oldClockName, newClockName) -> {
             clocks.values().forEach(clock -> clock.hideClock());
             Clock newClock = clocks.get(newClockName);
             newClock.getClockPane().toFront();
+            changeColorPickerButtons(newClock);
             newClock.showClock();
         });
     }
 
-
-
-    private void bindColorsProperties(Clock clock) {
-        hourColorButton.valueProperty().bindBidirectional(clock.hourColorProperty());
-        minuteColorButton.valueProperty().bindBidirectional(clock.minuteColorProperty());
-        secondColorButton.valueProperty().bindBidirectional(clock.secondColorProperty());
-        faceColorButton.valueProperty().bindBidirectional(clock.faceColorProperty());
-        bgColorButton.valueProperty().bindBidirectional(clock.bgColorProperty());
-    }
-
-    private void resetAllColors() {
+    public void resetAllColors() {
         Clock clock = getCurrentClock();
         clock.resetColors();
+        changeColorPickerButtons(clock);
+    }
+
+    private void changeColorPickerButtons(Clock clock) {
+        hourColorButton.valueProperty().setValue(clock.hourColorProperty().getValue());
+        minuteColorButton.valueProperty().setValue(clock.minuteColorProperty().getValue());
+        secondColorButton.valueProperty().setValue(clock.secondColorProperty().getValue());
+        faceColorButton.valueProperty().setValue(clock.faceColorProperty().getValue());
+        bgColorButton.valueProperty().setValue(clock.bgColorProperty().getValue());
     }
 
     private Clock getCurrentClock() {
@@ -108,8 +104,9 @@ public class LauncherController implements Initializable {
         this.faceColorButton.setTooltip(new Tooltip("Change clock face color"));
     }
 
-    public Clock registerClock(FXMLLoader loader, String name) {
+    public Clock registerClock(String fxmlPath, String name) {
         try {
+            FXMLLoader loader = new FXMLLoader(HelperUtils.getResourceLocation(fxmlPath));
             Pane clockPane = loader.load();
             clockPane.setVisible(false);
             clocksPane.getChildren().add(clockPane);
@@ -119,9 +116,7 @@ public class LauncherController implements Initializable {
             if (!switchClockButton.getItems().contains(name)) {
                 switchClockButton.getItems().add(name);
             }
-            bindColorsProperties(clock);
             clocks.put(name, clock);
-
             return clock;
         } catch (IOException e) {
             e.printStackTrace();
@@ -129,11 +124,12 @@ public class LauncherController implements Initializable {
         }
     }
 
-    public void unRegisterClock(Clock clock) {
-        if (clocks.containsKey(clock.getName())) {
-            clocksPane.getChildren().remove(clock.getClockPane());
-            switchClockButton.getItems().remove(clock.getName());
-            clocks.remove(clock.getName());
-        }
+    private void bindColorButtonsToClock() {
+        hourColorButton.setOnAction((event -> getCurrentClock().hourColorProperty().setValue(hourColorButton.getValue())));
+        minuteColorButton.setOnAction((event -> getCurrentClock().minuteColorProperty().setValue(minuteColorButton.getValue())));
+        secondColorButton.setOnAction((event -> getCurrentClock().secondColorProperty().setValue(secondColorButton.getValue())));
+        faceColorButton.setOnAction((event -> getCurrentClock().faceColorProperty().setValue(faceColorButton.getValue())));
+        bgColorButton.setOnAction((event -> getCurrentClock().bgColorProperty().setValue(bgColorButton.getValue())));
+
     }
 }

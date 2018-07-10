@@ -27,9 +27,9 @@ public class MirroredAnalogClock extends AnalogClock {
         Timeline tl = new Timeline();
         tl.setCycleCount(Animation.INDEFINITE);
         tl.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
-            hour.setValue(-Clock.getHours());
-            minute.setValue(-Clock.getMinutes());
-            second.setValue(-Clock.getSeconds());
+            hourProperty().setValue(-Clock.getHours());
+            minuteProperty().setValue(-Clock.getMinutes());
+            secondProperty().setValue(-Clock.getSeconds());
         })));
         tl.play();
     }

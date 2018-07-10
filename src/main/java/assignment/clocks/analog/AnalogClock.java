@@ -5,7 +5,6 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.binding.DoubleBinding;
-import javafx.beans.property.SimpleDoubleProperty;
 import javafx.fxml.FXML;
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Circle;
@@ -25,15 +24,6 @@ public class AnalogClock extends Clock {
     private Line hourHand;
     private Line minuteHand;
     private Line secondHand;
-    protected SimpleDoubleProperty hour;
-    protected SimpleDoubleProperty minute;
-    protected SimpleDoubleProperty second;
-
-    public AnalogClock() {
-        hour = new SimpleDoubleProperty(Clock.getHours());
-        minute = new SimpleDoubleProperty(Clock.getMinutes());
-        second = new SimpleDoubleProperty(Clock.getSeconds());
-    }
 
     private Rotate getRotate() {
         Rotate rotate = new Rotate();
@@ -49,9 +39,9 @@ public class AnalogClock extends Clock {
         Timeline tl = new Timeline();
         tl.setCycleCount(Animation.INDEFINITE);
         tl.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
-            hour.setValue(Clock.getHours());
-            minute.setValue(Clock.getMinutes());
-            second.setValue(Clock.getSeconds());
+            hourProperty().setValue(Clock.getHours());
+            minuteProperty().setValue(Clock.getMinutes());
+            secondProperty().setValue(Clock.getSeconds());
         })));
         tl.play();
     }
@@ -66,18 +56,18 @@ public class AnalogClock extends Clock {
     public void drawHands() {
         // Drawing second hand
         Point2D endPoint = pointFromOrigin(0, clockFace.getRadius() * Factor.SECOND_HAND.value());
-        secondHand = createHand(second.multiply(360 / 60), endPoint, 2);
+        secondHand = createHand(secondProperty().multiply(360 / 60), endPoint, 2);
         secondHand.setStartY(clockFace.getLayoutY() + clockFace.getRadius() * Factor.SECOND_HAND_BACK_LENGTH.value());
 
         // Drawing minute hand
         endPoint = pointFromOrigin(0, clockFace.getRadius() * Factor.MINUTE_HAND.value());
-        minuteHand = createHand(minute.multiply(360 / 60), endPoint, 3);
+        minuteHand = createHand(minuteProperty().multiply(360 / 60), endPoint, 3);
 
         // Drawing hour hand
         endPoint = pointFromOrigin(0, clockFace.getRadius() * Factor.HOUR_HAND.value());
-        hourHand = createHand(hour.multiply(360 / 12), endPoint, 3);
+        hourHand = createHand(hourProperty().multiply(360 / 12), endPoint, 3);
 
-        clockPane.getChildren().addAll(hourHand, minuteHand, secondHand);
+        getClockPane().getChildren().addAll(hourHand, minuteHand, secondHand);
         bindColorProperties();
     }
 
@@ -113,7 +103,7 @@ public class AnalogClock extends Clock {
             double dotRadius = i % 5 == 0 ? 3.5 : 1.5;
             Circle dot = new Circle(location.getX(), location.getY(), dotRadius);
             dot.fillProperty().bind(this.faceColorProperty());
-            clockPane.getChildren().add(dot);
+            getClockPane().getChildren().add(dot);
         }
     }
 
@@ -133,13 +123,13 @@ public class AnalogClock extends Clock {
         text.setLayoutY(5);
         text.fillProperty().bind(this.faceColorProperty());
         text.setFont(Font.font(text.getFont().getFamily(), FontWeight.BOLD, text.getFont().getSize() + 1));
-        clockPane.getChildren().add(text);
+        getClockPane().getChildren().add(text);
     }
 
     protected Point2D pointFromOrigin(double angle, double distanceFromOrigin) {
         double t = 2 * Math.PI * (angle - 15) / 60;
-        double x = clockPane.getPrefWidth() / 2 + distanceFromOrigin * Math.cos(t);
-        double y = clockPane.getPrefHeight() / 2 + distanceFromOrigin * Math.sin(t);
+        double x = getClockPane().getPrefWidth() / 2 + distanceFromOrigin * Math.cos(t);
+        double y = getClockPane().getPrefHeight() / 2 + distanceFromOrigin * Math.sin(t);
         return new Point2D(x, y);
     }
 
