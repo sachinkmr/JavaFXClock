@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fdb753-d07a-4e4a-bd9a-4448cad047dd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="220">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -40,7 +38,7 @@
       <file leaf-file-name="LauncherController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/LauncherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="770">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="method#registerClock#0;class#LauncherController#0" />
@@ -50,26 +48,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlarmUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlarmUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+            <state relative-caret-position="368">
+              <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#AlarmUI#0;class#AlarmUI#0" />
                 <element signature="method#setAlarmAnimation#0;class#AlarmUI#0" />
-                <element signature="method#createAlarm#0;class#Alarm#0" />
-                <element signature="method#closeWindowAndReset#0;class#Alarm#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alarm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Alarm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="330">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +100,9 @@
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/FuturisticClock.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" />
       </list>
     </option>
   </component>
@@ -140,10 +143,10 @@
     <option name="PATH_TO_P4V" value="C:\Program Files\Perforce\p4v.exe" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2214" />
-    <option name="y" value="-26" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -153,8 +156,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,7 +229,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,22 +345,23 @@
       <workItem from="1531215827683" duration="20000" />
       <workItem from="1531215952291" duration="1191000" />
       <workItem from="1531217326059" duration="5463000" />
+      <workItem from="1531225643864" duration="2665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6895000" />
+    <option name="totallyTimeSpent" value="9560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1874" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.23410405" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50215286" side_tool="true" visible="true" weight="0.3283859" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50215286" side_tool="true" visible="true" weight="0.38562092" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -365,7 +369,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21474704" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2078125" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -380,6 +384,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.23410405" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,6 +423,55 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/LauncherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="method#registerClock#0;class#LauncherController#0" />
+            <element signature="method#unRegisterClock#0;class#LauncherController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AlarmUI#0;class#AlarmUI#0" />
+            <element signature="method#setAlarmAnimation#0;class#AlarmUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -426,8 +480,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/alarm.png">
       <provider selected="true" editor-type-id="images" />
@@ -441,6 +495,8 @@
           <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AlarmUI#0;class#AlarmUI#0" />
+            <element signature="method#setAlarmAnimation#0;class#AlarmUI#0" />
           </folding>
         </state>
       </provider>
@@ -513,37 +569,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/root.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/styles/Styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/digital.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/roman/roman-digital.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/analog.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/roman/roman-analog.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/mirrored/mirrored.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/futuristic/futuristic.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/styles/Styles.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/digital.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/roman/roman-digital.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/analog.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/roman/roman-analog.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/mirrored/mirrored.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/futuristic/futuristic.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -559,28 +591,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/analog.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/digital.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/futuristic.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/mirrored.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-analog.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-digital.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/FuturisticClock.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -597,23 +629,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="39" column="103" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="220">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/LauncherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="770">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="method#registerClock#0;class#LauncherController#0" />
@@ -622,23 +654,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setAlarmAnimation#0;class#AlarmUI#0" />
-            <element signature="method#createAlarm#0;class#Alarm#0" />
-            <element signature="method#closeWindowAndReset#0;class#Alarm#0" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="-380">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="90" column="27" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AlarmUI#0;class#AlarmUI#0" />
+            <element signature="method#setAlarmAnimation#0;class#AlarmUI#0" />
+          </folding>
         </state>
       </provider>
     </entry>
