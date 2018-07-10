@@ -1,6 +1,7 @@
 package assignment;
 
 import assignment.alarm.Alarm;
+import assignment.alarm.AlarmUI;
 import assignment.clocks.Clock;
 import assignment.utils.HelperUtils;
 import com.jfoenix.controls.JFXToggleButton;
@@ -27,11 +28,7 @@ import java.util.ResourceBundle;
 
 public class LauncherController implements Initializable {
     private Map<String, Clock> clocks;
-    private Alarm alarm;
-    private Timeline playAlarm;
 
-    @FXML
-    private HBox alarmBox;
     @FXML
     private StackPane clocksPane;
     @FXML
@@ -56,10 +53,11 @@ public class LauncherController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         initTooltips();
         initColorButtonStyle();
-        initAlarmUI();
 
         clocks = new HashMap<>();
-        alarm = new Alarm();
+        AlarmUI alarmUI = new AlarmUI(alarmButton);
+        alarmUI.initAlarmUI();
+
 
         resetAllColorsButton.setOnAction((event) -> resetAllColors());
         switchClockButton.valueProperty().addListener((ov, oldClockName, newClockName) -> {
@@ -68,65 +66,9 @@ public class LauncherController implements Initializable {
             newClock.getClockPane().toFront();
             newClock.showClock();
         });
-
-
     }
 
-    private void initAlarmUI() {
-        // Creating Alarm UI
-        try {
-            FileInputStream input = new FileInputStream(HelperUtils.getResourceLocation("images/alarm.png").getFile());
-            Image image = new Image(input);
-            ImageView imageView = new ImageView(image);
-            imageView.setFitHeight(20);
-            imageView.setFitWidth(20);
-            playAlarm = new Timeline();
-            playAlarm.setCycleCount(Animation.INDEFINITE);
-            playAlarm.getKeyFrames().addAll(
-                    new KeyFrame(Duration.millis(0), new KeyValue(imageView.translateXProperty(), 0)),
-                    new KeyFrame(Duration.millis(250), new KeyValue(imageView.translateXProperty(), 2)),
-                    new KeyFrame(Duration.millis(500), new KeyValue(imageView.translateXProperty(), 0)),
-                    new KeyFrame(Duration.millis(750), new KeyValue(imageView.translateXProperty(), -2)),
-                    new KeyFrame(Duration.millis(1000), new KeyValue(imageView.translateXProperty(), 0))
-            );
 
-            Label label = new Label("");
-            label.setAlignment(Pos.CENTER);
-            label.setContentDisplay(ContentDisplay.CENTER);
-
-            alarmBox.setVisible(false);
-            alarmBox.setSpacing(5);
-            alarmBox.setAlignment(Pos.TOP_LEFT);
-
-            alarmBox.getChildren().addAll(imageView, label);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        alarmButton.setDisableVisualFocus(true);
-        alarmButton.selectedProperty().addListener((ov, oldState, newState) -> {
-            if (alarmButton.isSelected()) {
-                String alarmTime = setAlarm(true);
-                if (!alarmTime.isEmpty()) {
-                    ((Label) alarmBox.getChildren().get(1)).setText(alarmTime);
-                    ImageView img = ((ImageView)alarmBox.getChildren().get(0));
-
-                    playAlarm.playFromStart();
-                    alarmBox.setVisible(true);
-                } else {
-                    ((Label) alarmBox.getChildren().get(1)).setText("");
-                    playAlarm.stop();
-                    alarmBox.setVisible(false);
-                    alarmButton.setSelected(false);
-                }
-            } else {
-                setAlarm(false);
-                alarmButton.setSelected(false);
-                alarmBox.setVisible(false);
-            }
-        });
-        alarmBox.toFront();
-    }
 
     private void bindColorsProperties(Clock clock) {
         hourColorButton.valueProperty().bindBidirectional(clock.hourColorProperty());
@@ -164,11 +106,6 @@ public class LauncherController implements Initializable {
         this.minuteColorButton.setTooltip(new Tooltip("Change minute color"));
         this.secondColorButton.setTooltip(new Tooltip("Change second's color"));
         this.faceColorButton.setTooltip(new Tooltip("Change clock face color"));
-    }
-
-    private String setAlarm(boolean alarmState) {
-        alarm.setAlarm(alarmState);
-        return alarm.getAlarmTime();
     }
 
     public Clock registerClock(FXMLLoader loader, String name) {

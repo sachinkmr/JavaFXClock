@@ -7,10 +7,8 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.text.Font?>
 
 <BorderPane id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.LauncherController">
     <opaqueInsets>
@@ -39,11 +37,7 @@
                 <Label layoutX="202.0" layoutY="52.0" prefHeight="17.0" text="Foreground Color:" />
                 <ColorPicker fx:id="bgColorButton" layoutX="325.0" layoutY="89.0" prefHeight="25.0" prefWidth="41.0" promptText="Background Color" />
                 <Label layoutX="202.0" layoutY="93.0" prefHeight="17.0" prefWidth="113.0" text="Background Color:" />
-                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="316.0" layoutY="-1.0" prefHeight="25.0">
-               <font>
-                  <Font size="1.0" />
-               </font></JFXToggleButton>
-            <HBox fx:id="alarmBox" layoutX="243.0" layoutY="16.0" prefHeight="21.0" prefWidth="71.0" />
+                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="310.0" layoutY="-1.0" prefHeight="25.0" />
             </children>
             <BorderPane.margin>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
