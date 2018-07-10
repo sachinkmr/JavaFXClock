@@ -67,15 +67,11 @@ public class AlarmUI {
 
     private void setAlarmAnimation() {
         alarmAnimation.setCycleCount(Animation.INDEFINITE);
-        alarmAnimation.setOnFinished(event -> {
-            imageView.setScaleX(1);
-            imageView.setScaleY(1);
-        });
         alarmAnimation.getKeyFrames().addAll(
                 new KeyFrame(Duration.millis(0), new KeyValue(imageView.translateXProperty(), 0)),
-                new KeyFrame(Duration.millis(250), new KeyValue(imageView.translateXProperty(), 2)),
+                new KeyFrame(Duration.millis(250), new KeyValue(imageView.translateXProperty(), 3)),
                 new KeyFrame(Duration.millis(500), new KeyValue(imageView.translateXProperty(), 0)),
-                new KeyFrame(Duration.millis(750), new KeyValue(imageView.translateXProperty(), -2)),
+                new KeyFrame(Duration.millis(750), new KeyValue(imageView.translateXProperty(), -3)),
                 new KeyFrame(Duration.millis(1000), new KeyValue(imageView.translateXProperty(), 0))
         );
     }

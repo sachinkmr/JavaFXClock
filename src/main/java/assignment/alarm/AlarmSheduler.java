@@ -26,7 +26,6 @@ class AlarmScheduler {
 
     public void startAlarm(String alarmText, Timeline alarmAnimation) {
         alarmDate = getAlarmDate(alarmText);
-        System.out.println(alarmDate);
         timer.purge();
         timerTask = new AlarmTimerTask(alarmAnimation);
         timer.schedule(timerTask, alarmDate);

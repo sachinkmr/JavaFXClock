@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42fdb753-d07a-4e4a-bd9a-4448cad047dd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/Clock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/LauncherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/LauncherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/Alarm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/Clock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/clocks/Clock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock$Factor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock$Factor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/MirroredAnalogClock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/MirroredAnalogClock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/launcher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/launcher.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/AlarmUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/alarm/AlarmUI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +21,8 @@
       <file leaf-file-name="AlarmUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+            <state relative-caret-position="223">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +87,8 @@
       <file leaf-file-name="AlarmSheduler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="53" />
+            <state relative-caret-position="421">
+              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2310#2311#0" expanded="true" />
@@ -166,9 +149,9 @@
         <option value="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/popup.css" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java" />
       </list>
     </option>
@@ -267,49 +250,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment" type="462c0819:PsiDirectoryNode" />
               <item name="alarm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="clocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="clocks" type="462c0819:PsiDirectoryNode" />
-              <item name="analog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -451,12 +391,12 @@
       <workItem from="1531217326059" duration="5463000" />
       <workItem from="1531225643864" duration="2665000" />
       <workItem from="1531238231015" duration="10454000" />
-      <workItem from="1531249511223" duration="7322000" />
+      <workItem from="1531249511223" duration="8010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27336000" />
+    <option name="totallyTimeSpent" value="28024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -472,11 +412,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -796,21 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#1963#1964#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="method#setupAudio#0;class#AlarmTimerTask#0;class#AlarmScheduler#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-836">
@@ -835,10 +760,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+            <element signature="e#2350#2351#0" expanded="true" />
+            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#2023#2024#0" expanded="true" />
+            <element signature="method#setupAudio#0;class#AlarmTimerTask#0;class#AlarmScheduler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+        <state relative-caret-position="223">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
