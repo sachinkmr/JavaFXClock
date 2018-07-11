@@ -1,7 +1,6 @@
 package assignment.clocks.analog;
 
-import assignment.clocks.Clock;
-import assignment.clocks.analog.AnalogClock;
+import assignment.clocks.AbstractClock;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -27,9 +26,9 @@ public class MirroredAnalogClock extends AnalogClock {
         Timeline tl = new Timeline();
         tl.setCycleCount(Animation.INDEFINITE);
         tl.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
-            hourProperty().setValue(-Clock.getHours());
-            minuteProperty().setValue(-Clock.getMinutes());
-            secondProperty().setValue(-Clock.getSeconds());
+            hourProperty().setValue(-AbstractClock.getHours());
+            minuteProperty().setValue(-AbstractClock.getMinutes());
+            secondProperty().setValue(-AbstractClock.getSeconds());
         })));
         tl.play();
     }

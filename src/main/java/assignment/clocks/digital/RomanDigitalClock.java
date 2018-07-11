@@ -1,23 +1,22 @@
 package assignment.clocks.digital;
 
-import assignment.clocks.Clock;
-import assignment.clocks.digital.DigitalClock;
+import assignment.clocks.AbstractClock;
 import assignment.utils.RomanUtils;
 
 public class RomanDigitalClock extends DigitalClock {
     @Override
     public String getHourString() {
-        return pad(4, (int) Clock.getHours() == 0 ? 12 : (int) Clock.getHours());
+        return pad(4, (int) AbstractClock.getHours() == 0 ? 12 : (int) AbstractClock.getHours());
     }
 
     @Override
     public String getMinuteString() {
-        return pad(7, (int) Clock.getMinutes());
+        return pad(7, (int) AbstractClock.getMinutes());
     }
 
     @Override
     public String getSecondString() {
-        return pad(7, (int) Clock.getSeconds());
+        return pad(7, (int) AbstractClock.getSeconds());
     }
 
 

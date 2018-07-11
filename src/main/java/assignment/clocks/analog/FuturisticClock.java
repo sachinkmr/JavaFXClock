@@ -1,7 +1,6 @@
 package assignment.clocks.analog;
 
-import assignment.clocks.Clock;
-import assignment.clocks.analog.AnalogClock;
+import assignment.clocks.AbstractClock;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -17,9 +16,6 @@ import javafx.scene.shape.Arc;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.StrokeLineCap;
 import javafx.util.Duration;
-
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 public class FuturisticClock extends AnalogClock {
 
@@ -130,10 +126,6 @@ public class FuturisticClock extends AnalogClock {
                     secondHand.setLength(-getSecondAngle());
                     minuteHand.setLength(-getMinuteAngle());
                     hourHand.setLength(-getHourAngle());
-                    if (LocalTime.now().getSecond() % 2 == 0)
-                        f_time.setText(LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss a")));
-                    else
-                        f_time.setText(LocalTime.now().format(DateTimeFormatter.ofPattern("hh mm ss a")));
                 }));
 
         timeLine.setCycleCount(Animation.INDEFINITE);
@@ -141,14 +133,14 @@ public class FuturisticClock extends AnalogClock {
     }
 
     private double getSecondAngle() {
-        return Clock.getSeconds() * (360 / 60);
+        return AbstractClock.getSeconds() * (360 / 60);
     }
 
     private double getMinuteAngle() {
-        return Clock.getMinutes() * (360 / 60);
+        return AbstractClock.getMinutes() * (360 / 60);
     }
 
     private double getHourAngle() {
-        return Clock.getHours() * (360 / 12);
+        return AbstractClock.getHours() * (360 / 12);
     }
 }

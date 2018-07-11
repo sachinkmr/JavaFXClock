@@ -14,7 +14,7 @@ import java.time.ZoneId;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-public abstract class Clock implements Initializable {
+public abstract class AbstractClock implements Initializable {
     @FXML
     private AnchorPane clockPane;
     private String name;
@@ -29,7 +29,7 @@ public abstract class Clock implements Initializable {
     private SimpleDoubleProperty minute;
     private SimpleDoubleProperty second;
 
-    public Clock() {
+    public AbstractClock() {
         // Setting clock color
         hourColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
         minuteColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
@@ -37,10 +37,10 @@ public abstract class Clock implements Initializable {
         faceColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
         bgColor = new SimpleObjectProperty<>(Color.valueOf("white"));
 
-        // Setting Clock time
-        hour = new SimpleDoubleProperty(Clock.getHours());
-        minute = new SimpleDoubleProperty(Clock.getMinutes());
-        second = new SimpleDoubleProperty(Clock.getSeconds());
+        // Setting AbstractClock time
+        hour = new SimpleDoubleProperty(AbstractClock.getHours());
+        minute = new SimpleDoubleProperty(AbstractClock.getMinutes());
+        second = new SimpleDoubleProperty(AbstractClock.getSeconds());
     }
 
 
@@ -177,7 +177,7 @@ public abstract class Clock implements Initializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || this.getClass() != o.getClass()) return false;
-        Clock clock = (Clock) o;
+        AbstractClock clock = (AbstractClock) o;
         return Objects.equals(this.getName(), clock.getName());
     }
 

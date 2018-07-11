@@ -16,7 +16,6 @@ public class Launcher extends Application {
         FXMLLoader loader = new FXMLLoader(HelperUtils.getResourceLocation("fxml/launcher.fxml"));
         Parent root = loader.load();
         launcherController = loader.getController();
-
         primaryStage.setTitle("JavaFX Clock");
         primaryStage.setMinHeight(640);
         primaryStage.setMinWidth(420);

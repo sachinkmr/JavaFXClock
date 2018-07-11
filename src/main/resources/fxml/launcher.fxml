@@ -2,45 +2,51 @@
 
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ColorPicker?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
-
-<BorderPane id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.LauncherController">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="400.0"
+            prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.LauncherController">
     <opaqueInsets>
-        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
     </opaqueInsets>
     <center>
-        <StackPane id="clocksPane" fx:id="clocksPane" minHeight="380.0" minWidth="380.0" prefHeight="380.0" prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="CENTER">
+        <StackPane id="clocksPane" fx:id="clocksPane" minHeight="380.0" minWidth="380.0" prefHeight="380.0"
+                   prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="CENTER">
             <BorderPane.margin>
-                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
             </BorderPane.margin>
         </StackPane>
     </center>
     <bottom>
-        <Pane id="buttonPanel" fx:id="buttonPanel" minHeight="160.0" minWidth="380.0" prefHeight="160.0" prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="BOTTOM_CENTER">
+        <Pane id="buttonPanel" fx:id="buttonPanel" minHeight="160.0" minWidth="380.0" prefHeight="160.0"
+              prefWidth="380.0" styleClass="parentPane" BorderPane.alignment="BOTTOM_CENTER">
             <children>
-                <Label id="alarmLabel" layoutX="202.0" layoutY="17.0" prefHeight="17.0" prefWidth="40.0" text="Alarm:" />
-                <ComboBox id="switchClockButton" fx:id="switchClockButton" layoutX="14.0" layoutY="12.0" prefHeight="25.0" prefWidth="150.0" promptText="Switch Clock" />
-                <Button id="resetAllColorsButton" fx:id="resetAllColorsButton" layoutX="202.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="Reset All Colors" />
-                <ColorPicker fx:id="hourColorButton" layoutX="122.0" layoutY="48.0" prefHeight="25.0" prefWidth="41.0" promptText="Hour Color" />
-                <ColorPicker fx:id="minuteColorButton" layoutX="122.0" layoutY="88.0" prefHeight="25.0" prefWidth="41.0" promptText="Minute Color" />
-                <ColorPicker fx:id="secondColorButton" layoutX="122.0" layoutY="125.0" prefHeight="25.0" prefWidth="41.0" promptText="Second Color" />
-                <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" text="Hour Color:" />
-                <Label layoutX="14.0" layoutY="92.0" prefHeight="17.0" text="Minute Color:" />
-                <Label layoutX="14.0" layoutY="129.0" prefHeight="17.0" text="Second Color:" />
-                <ColorPicker fx:id="faceColorButton" layoutX="325.0" layoutY="48.0" prefHeight="25.0" prefWidth="41.0" promptText="Foreground Color" />
-                <Label layoutX="202.0" layoutY="52.0" prefHeight="17.0" text="Foreground Color:" />
-                <ColorPicker fx:id="bgColorButton" layoutX="325.0" layoutY="89.0" prefHeight="25.0" prefWidth="41.0" promptText="Background Color" />
-                <Label layoutX="202.0" layoutY="93.0" prefHeight="17.0" prefWidth="113.0" text="Background Color:" />
-                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="310.0" layoutY="-1.0" prefHeight="25.0" prefWidth="70.0"/>
+                <Label id="alarmLabel" layoutX="202.0" layoutY="17.0" prefHeight="17.0" prefWidth="40.0" text="Alarm:"/>
+                <ComboBox id="switchClockButton" fx:id="switchClockButton" layoutX="14.0" layoutY="12.0"
+                          prefHeight="25.0" prefWidth="150.0" promptText="Switch Clock"/>
+                <Button id="resetAllColorsButton" fx:id="resetAllColorsButton" layoutX="202.0" layoutY="125.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="Reset All Colors"/>
+                <ColorPicker fx:id="hourColorButton" layoutX="122.0" layoutY="48.0" prefHeight="25.0" prefWidth="41.0"
+                             promptText="Hour Color"/>
+                <ColorPicker fx:id="minuteColorButton" layoutX="122.0" layoutY="88.0" prefHeight="25.0" prefWidth="41.0"
+                             promptText="Minute Color"/>
+                <ColorPicker fx:id="secondColorButton" layoutX="122.0" layoutY="125.0" prefHeight="25.0"
+                             prefWidth="41.0" promptText="Second Color"/>
+                <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" text="Hour Color:"/>
+                <Label layoutX="14.0" layoutY="92.0" prefHeight="17.0" text="Minute Color:"/>
+                <Label layoutX="14.0" layoutY="129.0" prefHeight="17.0" text="Second Color:"/>
+                <ColorPicker fx:id="faceColorButton" layoutX="325.0" layoutY="48.0" prefHeight="25.0" prefWidth="41.0"
+                             promptText="Foreground Color"/>
+                <Label layoutX="202.0" layoutY="52.0" prefHeight="17.0" text="Foreground Color:"/>
+                <ColorPicker fx:id="bgColorButton" layoutX="325.0" layoutY="89.0" prefHeight="25.0" prefWidth="41.0"
+                             promptText="Background Color"/>
+                <Label layoutX="202.0" layoutY="93.0" prefHeight="17.0" prefWidth="113.0" text="Background Color:"/>
+                <JFXToggleButton id="alarmButton" fx:id="alarmButton" graphicTextGap="0.0" layoutX="310.0"
+                                 layoutY="-1.0" prefHeight="25.0" prefWidth="70.0"/>
             </children>
             <BorderPane.margin>
-                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
             </BorderPane.margin>
         </Pane>
     </bottom>

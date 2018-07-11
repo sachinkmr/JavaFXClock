@@ -1,10 +1,7 @@
 package assignment.clocks.analog;
 
-import assignment.clocks.analog.AnalogClock;
 import assignment.utils.RomanUtils;
 import javafx.geometry.Point2D;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 public class RomanAnalogClock extends AnalogClock {
