@@ -6,10 +6,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Launcher extends Application {
     private LauncherController launcherController;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -21,6 +24,16 @@ public class Launcher extends Application {
         primaryStage.setMinWidth(420);
         primaryStage.setResizable(false);
         primaryStage.setOnShown((event -> launcherController.resetAllColors()));
+
+        // Move using mouse
+        root.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+            primaryStage.setX(event.getScreenX() - xOffset);
+            primaryStage.setY(event.getScreenY() - yOffset);
+        });
 
         initClocks();
         Scene scene = new Scene(root);

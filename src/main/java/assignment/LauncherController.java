@@ -13,6 +13,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -41,6 +42,8 @@ public class LauncherController implements Initializable {
     private JFXToggleButton alarmButton;
     @FXML
     private Pane buttonPanel;
+    @FXML
+    private Button closeButton;
     private Map<String, AbstractClock> clocks;
 
     @FXML
@@ -55,6 +58,7 @@ public class LauncherController implements Initializable {
 
         bindColorButtonsToClock();
         resetAllColorsButton.setOnAction((event) -> resetAllColors());
+        closeButton.setOnAction(event -> ((Stage)clocksPane.getScene().getWindow()).close());
 
         switchClockButton.valueProperty().addListener((ov, oldClockName, newClockName) -> {
             clocks.values().forEach(clock -> clock.hideClock());

@@ -31,10 +31,10 @@ public abstract class AbstractClock implements Initializable {
 
     public AbstractClock() {
         // Setting clock color
-        hourColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
-        minuteColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
+        hourColor = new SimpleObjectProperty<>(Color.valueOf("#333333"));
+        minuteColor = new SimpleObjectProperty<>(Color.valueOf("#333333"));
         secondColor = new SimpleObjectProperty<>(Color.valueOf("red"));
-        faceColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
+        faceColor = new SimpleObjectProperty<>(Color.valueOf("#333333"));
         bgColor = new SimpleObjectProperty<>(Color.valueOf("white"));
 
         // Setting AbstractClock time
@@ -100,10 +100,10 @@ public abstract class AbstractClock implements Initializable {
     }
 
     public void resetColors() {
-        this.hourColor.setValue(Color.valueOf("#6b6969"));
-        this.minuteColor.setValue(Color.valueOf("#6b6969"));
+        this.hourColor.setValue(Color.valueOf("#333333"));
+        this.minuteColor.setValue(Color.valueOf("#333333"));
         this.secondColor.setValue(Color.valueOf("red"));
-        this.faceColor.setValue(Color.valueOf("#6b6969"));
+        this.faceColor.setValue(Color.valueOf("#333333"));
         this.bgColor.setValue(Color.valueOf("white"));
     }
 

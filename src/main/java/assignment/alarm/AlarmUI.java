@@ -7,17 +7,12 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.geometry.Pos;
-import javafx.scene.control.Alert;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
-import javafx.stage.Popup;
 import javafx.util.Duration;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 public class AlarmUI {
     private HBox alarmBox;
@@ -36,16 +31,12 @@ public class AlarmUI {
 
     public HBox initAlarmUI() {
         // Creating Alarm UI
-        try {
-            FileInputStream input = new FileInputStream(HelperUtils.getResourceLocation("images/alarm.png").getFile());
-            Image image = new Image(input);
-            imageView = new ImageView(image);
-            imageView.setFitHeight(20);
-            imageView.setFitWidth(20);
-            setAlarmAnimation();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        Image image = new Image(HelperUtils.getResourceLocation("images/alarm.png").toExternalForm());
+        imageView = new ImageView(image);
+        imageView.setFitHeight(20);
+        imageView.setFitWidth(20);
+        setAlarmAnimation();
+
 
         alarmLabel = new Label("");
         alarmLabel.setAlignment(Pos.CENTER);
