@@ -6,6 +6,7 @@ import javafx.beans.property.ReadOnlyIntegerProperty;
 import javafx.beans.property.ReadOnlyIntegerWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.scene.control.IndexRange;
+import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -15,7 +16,6 @@ import java.time.ZoneId;
 import java.util.regex.Pattern;
 
 public class TimePicker2 extends TextField {
-
     enum Unit {
         HOURS, MINUTES
     }

@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="42fdb753-d07a-4e4a-bd9a-4448cad047dd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,58 +34,79 @@
       <file leaf-file-name="TimePicker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="1958">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3697#3698#0" expanded="true" />
-                <element signature="e#3741#3742#0" expanded="true" />
-                <element signature="method#deleteNextChar#0;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="method#deletePreviousChar#0;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="method#deleteText#1;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="method#insertText#0;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="method#replaceSelection#0;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="e#7237#7238#0" expanded="true" />
-                <element signature="e#7309#7310#0" expanded="true" />
-                <element signature="method#replaceText#1;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="method#validate#0;class#TimeTextField#0;class#TimeSelector#0" />
-                <element signature="class#TimeUnitBinding#0;class#TimeTextField#0;class#TimeSelector#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimePicker2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimePicker2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="352">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="method#TimePicker2#0;class#TimePicker#0" />
-                <element signature="e#2711#2900#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="method#getClockTime#0;class#TimePicker2#0" />
-                <element signature="method#appendText#0;class#TimePicker#0" />
-                <element signature="method#deleteNextChar#0;class#TimePicker#0" />
-                <element signature="method#deletePreviousChar#0;class#TimePicker#0" />
-                <element signature="method#deleteText#1;class#TimePicker#0" />
-                <element signature="method#replaceSelection#0;class#TimePicker#0" />
-                <element signature="e#6934#6935#0" expanded="true" />
-                <element signature="e#7006#7007#0" expanded="true" />
-                <element signature="method#replaceText#1;class#TimePicker#0" />
-                <element signature="method#validate#0;class#TimePicker#0" />
-                <element signature="e#8567#8568#0" expanded="true" />
-                <element signature="e#8603#8604#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Spinner.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/Spinner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="333">
+              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeSpinner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimeSpinner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3916">
+              <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#2157#2158#0" expanded="true" />
+                <element signature="e#2211#2212#0" expanded="true" />
+                <element signature="e#2409#2410#0" expanded="true" />
+                <element signature="e#2436#2437#0" expanded="true" />
+                <element signature="e#2471#2472#0" expanded="true" />
+                <element signature="e#2514#2515#0" expanded="true" />
+                <element signature="e#2558#2559#0" expanded="true" />
+                <element signature="e#2598#2599#0" expanded="true" />
+                <element signature="e#3032#3033#0" expanded="true" />
+                <element signature="e#3093#3094#0" expanded="true" />
+                <element signature="e#4127#4138#0" expanded="true" />
+                <element signature="e#6294#6295#0" expanded="true" />
+                <element signature="e#6331#6332#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +114,7 @@
       <file leaf-file-name="AlarmUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="1276">
               <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
@@ -101,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="924">
-              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -161,8 +184,9 @@
         <option value="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/TimeSelector.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/TimePicker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/TimeSpinner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
       </list>
     </option>
   </component>
@@ -213,10 +237,11 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <showMembers ProjectPane="true" />
+      <showMembers ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,15 +327,6 @@
               <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="TimePicker2" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,23 +376,12 @@
               <item name="scene" type="462c0819:PsiDirectoryNode" />
               <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javafx" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-              <item name="Spinner" type="1a9f42e2:ClassTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -523,12 +528,13 @@
       <workItem from="1531311596584" duration="156000" />
       <workItem from="1531389205896" duration="2080000" />
       <workItem from="1531723474308" duration="480000" />
-      <workItem from="1531734267794" duration="5359000" />
+      <workItem from="1531734267794" duration="5454000" />
+      <workItem from="1531749328080" duration="802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41517000" />
+    <option name="totallyTimeSpent" value="42414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -544,13 +550,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.3150289" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.3150289" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.21483622" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -563,6 +568,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.21483622" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,14 +632,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="77" column="52" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbactions.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/FXMLController.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -681,10 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="2075" column="28" selection-start-line="2075" selection-start-column="28" selection-end-line="2075" selection-end-column="28" />
-          <folding>
-            <element signature="e#79010#79011#0" expanded="true" />
-            <element signature="e#79046#79047#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,22 +785,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="1958">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3697#3698#0" expanded="true" />
-            <element signature="e#3741#3742#0" expanded="true" />
-            <element signature="method#deleteNextChar#0;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="method#deletePreviousChar#0;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="method#deleteText#1;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="method#insertText#0;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="method#replaceSelection#0;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="e#7237#7238#0" expanded="true" />
-            <element signature="e#7309#7310#0" expanded="true" />
-            <element signature="method#replaceText#1;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="method#validate#0;class#TimeTextField#0;class#TimeSelector#0" />
-            <element signature="class#TimeUnitBinding#0;class#TimeTextField#0;class#TimeSelector#0" />
           </folding>
         </state>
       </provider>
@@ -831,7 +813,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="1276">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
@@ -839,7 +821,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
-          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -855,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
@@ -870,33 +845,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/Spinner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        <state relative-caret-position="352">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getClockTime#0;class#TimePicker2#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/SpinnerValueFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="513">
+          <caret line="1192" column="42" lean-forward="true" selection-start-line="1192" selection-start-column="42" selection-end-line="1192" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/Spinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="28" />
           <folding>
-            <element signature="method#TimePicker2#0;class#TimePicker#0" />
-            <element signature="e#2711#2900#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="method#getClockTime#0;class#TimePicker2#0" />
-            <element signature="method#appendText#0;class#TimePicker#0" />
-            <element signature="method#deleteNextChar#0;class#TimePicker#0" />
-            <element signature="method#deletePreviousChar#0;class#TimePicker#0" />
-            <element signature="method#deleteText#1;class#TimePicker#0" />
-            <element signature="method#replaceSelection#0;class#TimePicker#0" />
-            <element signature="e#6934#6935#0" expanded="true" />
-            <element signature="e#7006#7007#0" expanded="true" />
-            <element signature="method#replaceText#1;class#TimePicker#0" />
-            <element signature="method#validate#0;class#TimePicker#0" />
-            <element signature="e#8567#8568#0" expanded="true" />
-            <element signature="e#8603#8604#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimeSpinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3916">
+          <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2211#2212#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+            <element signature="e#2514#2515#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2598#2599#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#3093#3094#0" expanded="true" />
+            <element signature="e#4127#4138#0" expanded="true" />
+            <element signature="e#6294#6295#0" expanded="true" />
+            <element signature="e#6331#6332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
