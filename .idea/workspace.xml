@@ -7,59 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42fdb753-d07a-4e4a-bd9a-4448cad047dd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXClock.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nb-configuration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbactions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/AbstractClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/FuturisticClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/FuturisticClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/clocks/digital/RomanDigitalClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/clocks/digital/RomanDigitalClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/analog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/analog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/digital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/digital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/futuristic.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/futuristic.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/mirrored.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/mirrored.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-analog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-analog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-digital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/clocks/roman-digital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alarm.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/Launcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/LauncherController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/AlarmScheduler$AlarmTimerTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/AlarmScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/AlarmUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/alarm/TimePicker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/Clock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock$Factor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/AnalogClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/FuturisticClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/MirroredAnalogClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/analog/RomanAnalogClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/digital/DigitalClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/clocks/digital/RomanDigitalClock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/utils/HelperUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment/utils/RomanUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/analog.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/digital.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/futuristic.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/mirrored.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/roman-analog.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/clocks/roman-digital.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/launcher.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/alarm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles/root.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,15 +19,117 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimePicker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3697#3698#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
+                <element signature="method#deleteNextChar#0;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="method#deletePreviousChar#0;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="method#deleteText#1;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="method#insertText#0;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="method#replaceSelection#0;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="e#7237#7238#0" expanded="true" />
+                <element signature="e#7309#7310#0" expanded="true" />
+                <element signature="method#replaceText#1;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="method#validate#0;class#TimeTextField#0;class#TimeSelector#0" />
+                <element signature="class#TimeUnitBinding#0;class#TimeTextField#0;class#TimeSelector#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimePicker2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="method#TimePicker2#0;class#TimePicker#0" />
+                <element signature="e#2711#2900#0" expanded="true" />
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="method#getClockTime#0;class#TimePicker2#0" />
+                <element signature="method#appendText#0;class#TimePicker#0" />
+                <element signature="method#deleteNextChar#0;class#TimePicker#0" />
+                <element signature="method#deletePreviousChar#0;class#TimePicker#0" />
+                <element signature="method#deleteText#1;class#TimePicker#0" />
+                <element signature="method#replaceSelection#0;class#TimePicker#0" />
+                <element signature="e#6934#6935#0" expanded="true" />
+                <element signature="e#7006#7007#0" expanded="true" />
+                <element signature="method#replaceText#1;class#TimePicker#0" />
+                <element signature="method#validate#0;class#TimePicker#0" />
+                <element signature="e#8567#8568#0" expanded="true" />
+                <element signature="e#8603#8604#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlarmUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimePicker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TimePicker.this</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/MirroredAnalogClock.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/utils/RomanUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/RomanAnalogClock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/popup.css" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" />
@@ -106,10 +155,14 @@
         <option value="$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/LauncherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/AbstractClock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java" />
         <option value="$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/TimeSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/TimePicker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java" />
       </list>
     </option>
   </component>
@@ -153,17 +206,17 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +257,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="clocks" type="462c0819:PsiDirectoryNode" />
+              <item name="alarm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="alarm" type="462c0819:PsiDirectoryNode" />
+              <item name="AlarmSheduler.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
@@ -214,7 +277,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment" type="462c0819:PsiDirectoryNode" />
               <item name="clocks" type="462c0819:PsiDirectoryNode" />
-              <item name="analog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +293,24 @@
               <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="TimePicker2" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,17 +323,58 @@
             </path>
             <path>
               <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFXClock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-              <item name="clocks" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFXClock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="jfxrt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+              <item name="Spinner" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -279,16 +400,17 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace\Learn\JavaFX\JavaFXClock\src\main\resources" />
-      <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\resources" />
       <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\java\assignment\utils\resources" />
       <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\resources\styles" />
       <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\resources\images" />
       <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\resources\fxml" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\learn\Java\JavaFX\JavaFXClock" />
+      <recent name="D:\Workspace\Learn\JavaFX\JavaFXClock\src\main\resources" />
+      <recent name="S:\learn\Java\JavaFX\JavaFXClock\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,7 +425,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assignment.Demo" />
+      <module name="JavaFXClock" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment.Launcher" />
       <module name="JavaFXClock" />
@@ -356,8 +489,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Launcher" />
+      <item itemvalue="Application.Demo" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
@@ -383,14 +521,18 @@
       <workItem from="1531304792362" duration="3440000" />
       <workItem from="1531311322958" duration="182000" />
       <workItem from="1531311596584" duration="156000" />
+      <workItem from="1531389205896" duration="2080000" />
+      <workItem from="1531723474308" duration="480000" />
+      <workItem from="1531734267794" duration="5359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33598000" />
+    <option name="totallyTimeSpent" value="41517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -402,25 +544,25 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.32755297" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.3150289" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21197917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.21483622" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49838537" weight="0.23128492" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49838537" weight="0.08863199" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32947975" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,11 +573,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>unit.ordinal()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tokens[2].matches(&quot;[AP]M&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>validate(this.getText())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>time.split(&quot;[: ]&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>newClock.bgColorProperty().</expression-string>
         <language-id>JAVA</language-id>
@@ -461,55 +623,17 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>getClass().getResource(&quot;fxml&quot;);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/images/alarm.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/styles/root.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1694">
           <caret line="77" column="52" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbactions.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nbactions.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/FXMLController.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -518,22 +642,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbactions.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nbactions.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/FXMLController.java" />
-    <entry file="file://$PROJECT_DIR$/nb-configuration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nb-configuration.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/FXMLController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Scene.fxml" />
-    <entry file="file://$PROJECT_DIR$/nbactions.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nbactions.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/alarm.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -548,23 +662,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/mirrored/mirrored.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/futuristic/futuristic.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/Alarm.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles/popup.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/utils/RomanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -572,23 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/LauncherController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
-          <folding>
-            <element signature="method#getCurrentClock#0;class#LauncherController#0" />
-            <element signature="method#initColorButtonStyle#0;class#LauncherController#0" />
-            <element signature="method#initTooltips#0;class#LauncherController#0" />
-            <element signature="method#bindColorButtonsToClock#0;class#LauncherController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,27 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/AbstractClock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/analog/AnalogClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,13 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="127" column="56" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#paintDots#0;class#FuturisticClock#0" />
-            <element signature="method#drawHands#0;class#FuturisticClock#0" />
-            <element signature="method#drawArc#0;class#FuturisticClock#0" />
-            <element signature="method#bindColorProperties#0;class#FuturisticClock#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,13 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -719,11 +773,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/resources/fxml/clocks/analog.fxml" />
+    <entry file="file://$PROJECT_DIR$/resources/fxml/launcher.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/utils/HelperUtils.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="349" column="32" selection-start-line="349" selection-start-column="32" selection-end-line="349" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="method#deleteNextChar#0;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="method#deletePreviousChar#0;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="method#deleteText#1;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="method#insertText#0;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="method#replaceSelection#0;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="e#7237#7238#0" expanded="true" />
+            <element signature="e#7309#7310#0" expanded="true" />
+            <element signature="method#replaceText#1;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="method#validate#0;class#TimeTextField#0;class#TimeSelector#0" />
+            <element signature="class#TimeUnitBinding#0;class#TimeTextField#0;class#TimeSelector#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/AbstractClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="152" column="25" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
+          <folding>
+            <element signature="e#4130#4131#0" expanded="true" />
+            <element signature="e#4222#4223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/TimePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/alarm/AlarmSheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/clocks/digital/DigitalClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/launcher.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/control/Spinner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/assignment/TimePicker2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="method#TimePicker2#0;class#TimePicker#0" />
+            <element signature="e#2711#2900#0" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="method#getClockTime#0;class#TimePicker2#0" />
+            <element signature="method#appendText#0;class#TimePicker#0" />
+            <element signature="method#deleteNextChar#0;class#TimePicker#0" />
+            <element signature="method#deletePreviousChar#0;class#TimePicker#0" />
+            <element signature="method#deleteText#1;class#TimePicker#0" />
+            <element signature="method#replaceSelection#0;class#TimePicker#0" />
+            <element signature="e#6934#6935#0" expanded="true" />
+            <element signature="e#7006#7007#0" expanded="true" />
+            <element signature="method#replaceText#1;class#TimePicker#0" />
+            <element signature="method#validate#0;class#TimePicker#0" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8603#8604#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
