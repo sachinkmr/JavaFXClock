@@ -1,7 +1,7 @@
 package assignment;
 
 import assignment.alarm.AlarmUI;
-import assignment.clocks.AbstractClock;
+import assignment.clocks.Clock;
 import assignment.component.ToggleSwitch;
 import assignment.utils.HelperUtils;
 import javafx.animation.Animation;
@@ -44,7 +44,7 @@ public class LauncherController implements Initializable {
     private Pane buttonPanel;
     @FXML
     private Button startStopButton;
-    private Map<String, AbstractClock> clocks;
+    private Map<String, Clock> clocks;
 
     @FXML
     @Override
@@ -66,7 +66,7 @@ public class LauncherController implements Initializable {
                 clock.hideClock();
                 clock.getTimeLine().stop();
             });
-            AbstractClock newClock = clocks.get(newClockName);
+            Clock newClock = clocks.get(newClockName);
             newClock.getTimeLine().playFromStart();
             newClock.getClockPane().toFront();
             changeColorPickerButtons(newClock);
@@ -75,7 +75,7 @@ public class LauncherController implements Initializable {
         });
     }
 
-    private void setClockRunningStatus(AbstractClock clock) {
+    private void setClockRunningStatus(Clock clock) {
         Animation.Status status = clock.getTimeLine().getStatus();
         if (status == Animation.Status.RUNNING) {
             startStopButton.setText("Start");
@@ -87,12 +87,12 @@ public class LauncherController implements Initializable {
     }
 
     public void resetAllColors() {
-        AbstractClock clock = getCurrentClock();
+        Clock clock = getCurrentClock();
         clock.resetColors();
         changeColorPickerButtons(clock);
     }
 
-    private void changeColorPickerButtons(AbstractClock clock) {
+    private void changeColorPickerButtons(Clock clock) {
         hourColorButton.valueProperty().setValue(clock.hourColorProperty().getValue());
         minuteColorButton.valueProperty().setValue(clock.minuteColorProperty().getValue());
         secondColorButton.valueProperty().setValue(clock.secondColorProperty().getValue());
@@ -100,8 +100,8 @@ public class LauncherController implements Initializable {
         bgColorButton.valueProperty().setValue(clock.bgColorProperty().getValue());
     }
 
-    private AbstractClock getCurrentClock() {
-        for (AbstractClock clock : clocks.values()) {
+    private Clock getCurrentClock() {
+        for (Clock clock : clocks.values()) {
             if (clock.getClockPane().isVisible()) return clock;
         }
         throw new RuntimeException("No Visible clock found");
@@ -125,13 +125,13 @@ public class LauncherController implements Initializable {
         this.faceColorButton.setTooltip(new Tooltip("Change clock face color"));
     }
 
-    public AbstractClock registerClock(String fxmlPath, String name) {
+    public Clock registerClock(String fxmlPath, String name) {
         try {
             FXMLLoader loader = new FXMLLoader(HelperUtils.getResourceLocation(fxmlPath));
             Pane clockPane = loader.load();
             clockPane.setVisible(false);
             clocksPane.getChildren().add(clockPane);
-            AbstractClock clock = loader.getController();
+            Clock clock = loader.getController();
             clock.setName(name);
 
             if (!switchClockButton.getItems().contains(name)) {

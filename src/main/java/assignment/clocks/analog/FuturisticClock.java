@@ -1,6 +1,6 @@
 package assignment.clocks.analog;
 
-import assignment.clocks.AbstractClock;
+import assignment.clocks.Clock;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -133,14 +133,14 @@ public class FuturisticClock extends AnalogClock {
     }
 
     private double getSecondAngle() {
-        return AbstractClock.getSeconds() * (360 / 60);
+        return Clock.getSeconds() * (360 / 60);
     }
 
     private double getMinuteAngle() {
-        return AbstractClock.getMinutes() * (360 / 60);
+        return Clock.getMinutes() * (360 / 60);
     }
 
     private double getHourAngle() {
-        return AbstractClock.getHours() * (360 / 12);
+        return Clock.getHours() * (360 / 12);
     }
 }

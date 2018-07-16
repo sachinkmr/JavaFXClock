@@ -1,6 +1,6 @@
 package assignment.clocks.digital;
 
-import assignment.clocks.AbstractClock;
+import assignment.clocks.Clock;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -13,7 +13,7 @@ import javafx.util.Duration;
 
 import java.time.LocalTime;
 
-public class DigitalClock extends AbstractClock {
+public class DigitalClock extends Clock {
     @FXML
     private HBox labels;
     @FXML
@@ -64,7 +64,7 @@ public class DigitalClock extends AbstractClock {
         hours.setText(getHourString());
         minutes.setText(getMinuteString());
         seconds.setText(getSecondString());
-        am_pm.setText(AbstractClock.getAM_PM());
+        am_pm.setText(Clock.getAM_PM());
         if (LocalTime.now().getSecond() % 2 == 0) {
             colon1.setVisible(true);
             colon2.setVisible(true);
@@ -75,15 +75,15 @@ public class DigitalClock extends AbstractClock {
     }
 
     protected String getHourString() {
-        return pad(2, (int) AbstractClock.getHours() == 0 ? 12 : (int) AbstractClock.getHours());
+        return pad(2, (int) Clock.getHours() == 0 ? 12 : (int) Clock.getHours());
     }
 
     protected String getMinuteString() {
-        return pad(2, (int) AbstractClock.getMinutes());
+        return pad(2, (int) Clock.getMinutes());
     }
 
     protected String getSecondString() {
-        return pad(2, (int) AbstractClock.getSeconds());
+        return pad(2, (int) Clock.getSeconds());
     }
 
     protected String pad(int paddingCount, int s) {

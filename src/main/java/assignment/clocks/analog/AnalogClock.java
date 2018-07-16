@@ -1,6 +1,6 @@
 package assignment.clocks.analog;
 
-import assignment.clocks.AbstractClock;
+import assignment.clocks.Clock;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -15,7 +15,7 @@ import javafx.scene.text.Text;
 import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
 
-public class AnalogClock extends AbstractClock {
+public class AnalogClock extends Clock {
     @FXML
     private Circle clockFace;
     @FXML
@@ -39,9 +39,9 @@ public class AnalogClock extends AbstractClock {
         timeLine = new Timeline();
         timeLine.setCycleCount(Animation.INDEFINITE);
         timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
-            hourProperty().setValue(AbstractClock.getHours());
-            minuteProperty().setValue(AbstractClock.getMinutes());
-            secondProperty().setValue(AbstractClock.getSeconds());
+            hourProperty().setValue(Clock.getHours());
+            minuteProperty().setValue(Clock.getMinutes());
+            secondProperty().setValue(Clock.getSeconds());
         })));
         timeLine.play();
     }
