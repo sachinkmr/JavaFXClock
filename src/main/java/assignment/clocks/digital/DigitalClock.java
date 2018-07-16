@@ -32,14 +32,14 @@ public class DigitalClock extends AbstractClock {
     @Override
     protected void startClock() {
         // the digital clock updates once a second.
-        final Timeline digitalTime = new Timeline(
+        timeLine = new Timeline(
                 new KeyFrame(Duration.seconds(0),
                         actionEvent -> drawHands()),
                 new KeyFrame(Duration.seconds(1))
         );
 
-        digitalTime.setCycleCount(Animation.INDEFINITE);
-        digitalTime.play();
+        timeLine.setCycleCount(Animation.INDEFINITE);
+        timeLine.play();
     }
 
     @Override

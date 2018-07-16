@@ -2,8 +2,9 @@ package assignment;
 
 import assignment.alarm.AlarmUI;
 import assignment.clocks.AbstractClock;
+import assignment.component.ToggleSwitch;
 import assignment.utils.HelperUtils;
-import com.jfoenix.controls.JFXToggleButton;
+import javafx.animation.Animation;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -38,9 +39,11 @@ public class LauncherController implements Initializable {
     @FXML
     private ColorPicker bgColorButton;
     @FXML
-    private JFXToggleButton alarmButton;
+    private ToggleSwitch alarmButton;
     @FXML
     private Pane buttonPanel;
+    @FXML
+    private Button startStopButton;
     private Map<String, AbstractClock> clocks;
 
     @FXML
@@ -56,13 +59,31 @@ public class LauncherController implements Initializable {
         bindColorButtonsToClock();
         resetAllColorsButton.setOnAction((event) -> resetAllColors());
 
+        startStopButton.setOnAction(event -> setClockRunningStatus(getCurrentClock()));
+
         switchClockButton.valueProperty().addListener((ov, oldClockName, newClockName) -> {
-            clocks.values().forEach(clock -> clock.hideClock());
+            clocks.values().forEach(clock -> {
+                clock.hideClock();
+                clock.getTimeLine().stop();
+            });
             AbstractClock newClock = clocks.get(newClockName);
+            newClock.getTimeLine().playFromStart();
             newClock.getClockPane().toFront();
             changeColorPickerButtons(newClock);
             newClock.showClock();
+            startStopButton.setText("Stop");
         });
+    }
+
+    private void setClockRunningStatus(AbstractClock clock) {
+        Animation.Status status = clock.getTimeLine().getStatus();
+        if (status == Animation.Status.RUNNING) {
+            startStopButton.setText("Start");
+            clock.getTimeLine().pause();
+        } else {
+            startStopButton.setText("Stop");
+            clock.getTimeLine().playFromStart();
+        }
     }
 
     public void resetAllColors() {

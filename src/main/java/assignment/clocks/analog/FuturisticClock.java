@@ -121,7 +121,7 @@ public class FuturisticClock extends AnalogClock {
 
     @Override
     public void startClock() {
-        Timeline timeLine = new Timeline(
+        timeLine = new Timeline(
                 new KeyFrame(Duration.millis(10), t -> {
                     secondHand.setLength(-getSecondAngle());
                     minuteHand.setLength(-getMinuteAngle());

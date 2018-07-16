@@ -11,6 +11,10 @@ import javafx.stage.Stage;
 public class Launcher extends Application {
     private LauncherController launcherController;
 
+    public static void main(String[] args) {
+        Launcher.launch();
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(HelperUtils.getResourceLocation("fxml/launcher.fxml"));
@@ -36,9 +40,5 @@ public class Launcher extends Application {
         launcherController.registerClock("fxml/clocks/roman-analog.fxml", "Roman Analog Clock");
         launcherController.registerClock("fxml/clocks/roman-digital.fxml", "Roman Digital Clock");
         launcherController.registerClock("fxml/clocks/futuristic.fxml", "Futuristic Clock");
-    }
-
-    public static void main(String[] args) {
-        Launcher.launch();
     }
 }

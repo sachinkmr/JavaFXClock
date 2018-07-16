@@ -36,14 +36,14 @@ public class AnalogClock extends AbstractClock {
     public void startClock() {
         origin.toFront();
 
-        Timeline tl = new Timeline();
-        tl.setCycleCount(Animation.INDEFINITE);
-        tl.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
+        timeLine = new Timeline();
+        timeLine.setCycleCount(Animation.INDEFINITE);
+        timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
             hourProperty().setValue(AbstractClock.getHours());
             minuteProperty().setValue(AbstractClock.getMinutes());
             secondProperty().setValue(AbstractClock.getSeconds());
         })));
-        tl.play();
+        timeLine.play();
     }
 
     @Override
@@ -133,6 +133,14 @@ public class AnalogClock extends AbstractClock {
         return new Point2D(x, y);
     }
 
+    public Circle getClockFace() {
+        return clockFace;
+    }
+
+    protected Circle getOrigin() {
+        return origin;
+    }
+
     protected enum Factor {
         DOTS_PADDING(0.055),
         NUMBER_PADDING(0.125),
@@ -150,13 +158,5 @@ public class AnalogClock extends AbstractClock {
         public double value() {
             return this.factor;
         }
-    }
-
-    public Circle getClockFace() {
-        return clockFace;
-    }
-
-    protected Circle getOrigin() {
-        return origin;
     }
 }

@@ -3,27 +3,26 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.shape.Circle?>
-<AnchorPane id="FuturisticClock" fx:id="clockPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-            minWidth="-Infinity" prefHeight="380.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.clocks.analog.FuturisticClock">
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="FuturisticClock" fx:id="clockPane" maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="380.0"
+            xmlns="http://javafx.com/javafx/8.0.121" fx:controller="assignment.clocks.analog.FuturisticClock">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
     </padding>
-    <children>
-        <Circle fx:id="clockFace" fill="#1f93ff00" layoutX="190.0" layoutY="190.0" radius="180.0" stroke="#6b6969"
-                strokeType="INSIDE" strokeWidth="4.0"/>
-        <Label id="f_time" fx:id="f_time" layoutX="176.0" layoutY="182.0">
-            <font>
-                <Font size="15.0"/>
-            </font>
-        </Label>
-        <!--<VBox prefHeight="200.0" prefWidth="100.0">-->
-        <!--<children>-->
-        <!--<ImageView fitHeight="62.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />-->
-        <!--<Label alignment="CENTER" contentDisplay="CENTER" text="Label" />-->
-        <!--</children>-->
-        <!--</VBox>-->
-    </children>
+    <Circle fx:id="clockFace" fill="#1f93ff00" layoutX="190.0" layoutY="190.0" radius="180.0" stroke="#6b6969"
+            strokeType="INSIDE" strokeWidth="4.0"/>
+    <Label id="f_time" fx:id="f_time" layoutX="176.0" layoutY="182.0">
+        <font>
+            <Font size="15.0"/>
+        </font>
+    </Label>
+    <!--<VBox prefHeight="200.0" prefWidth="100.0">-->
+    <!--<children>-->
+    <!--<ImageView fitHeight="62.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />-->
+    <!--<Label alignment="CENTER" contentDisplay="CENTER" text="Label" />-->
+    <!--</children>-->
+    <!--</VBox>-->
 </AnchorPane>

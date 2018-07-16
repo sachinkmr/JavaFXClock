@@ -4,58 +4,56 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.*?>
-<AnchorPane id="RomanDigitalClock" fx:id="clockPane" prefHeight="380.0" prefWidth="380.0"
-            xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.clocks.digital.RomanDigitalClock">
-    <children>
-        <HBox styleClass="digitalClockBox" fx:id="labels" alignment="CENTER" layoutX="10.0" layoutY="100.0"
-              prefHeight="200.0"
-              prefWidth="360.0" spacing="5.0">
-            <children>
-                <Label fx:id="hours" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="HH"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="colon1" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=":"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="minutes" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="MM"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="colon2" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=":"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="seconds" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="SS"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="space" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=" "
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="am_pm" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="PM"
-                       textAlignment="CENTER">
-                    <font>
-                        <Font size="25.0"/>
-                    </font>
-                </Label>
-            </children>
-        </HBox>
-    </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="RomanDigitalClock" fx:id="clockPane" prefHeight="380.0"
+            prefWidth="380.0"
+            xmlns="http://javafx.com/javafx/8.0.121" fx:controller="assignment.clocks.digital.RomanDigitalClock">
 
+    <HBox styleClass="digitalClockBox" fx:id="labels" alignment="CENTER" layoutX="10.0" layoutY="100.0"
+          prefHeight="200.0"
+          prefWidth="360.0" spacing="5.0">
+        <children>
+            <Label fx:id="hours" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="HH"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label fx:id="colon1" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=":"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label fx:id="minutes" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="MM"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label fx:id="colon2" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=":"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label fx:id="seconds" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="SS"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text=" "
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+            <Label fx:id="am_pm" alignment="TOP_CENTER" contentDisplay="TOP" styleClass="digital" text="PM"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="25.0"/>
+                </font>
+            </Label>
+        </children>
+    </HBox>
 </AnchorPane>

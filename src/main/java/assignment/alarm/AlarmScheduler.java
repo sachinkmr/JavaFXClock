@@ -21,11 +21,10 @@ class AlarmScheduler {
 
     public AlarmScheduler() {
         timer = new Timer(true);
-
     }
 
     public void startAlarm(String alarmText, Timeline alarmAnimation) {
-        alarmDate = getAlarmDate(alarmText);
+        alarmDate = setAlarmDate(alarmText);
         timer.purge();
         timerTask = new AlarmTimerTask(alarmAnimation);
         timer.schedule(timerTask, alarmDate);
@@ -37,11 +36,7 @@ class AlarmScheduler {
         alarmDate = null;
     }
 
-    public Date getAlarmDate() {
-        return alarmDate;
-    }
-
-    public Date getAlarmDate(String alarmText) {
+    private Date setAlarmDate(String alarmText) {
         LocalTime alarmTime = LocalTime.parse(alarmText, DateTimeFormatter.ofPattern("h:mm a"));
         LocalTime currentTime = LocalTime.now();
         long minutes = alarmTime.isBefore(currentTime) ? 1440 + ChronoUnit.MINUTES.between(currentTime, alarmTime) :
@@ -51,9 +46,14 @@ class AlarmScheduler {
         return Date.from(dateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
+    public Date getAlarmDate() {
+        if (alarmDate != null) return alarmDate;
+        throw new IllegalStateException("Initialize alarm first");
+    }
+
     private static class AlarmTimerTask extends TimerTask {
-        private Timeline alarmAnimation;
         private static final long ALARM_PLAY_TIME = 10 * 1000;
+        private Timeline alarmAnimation;
         private Clip clip;
 
         public AlarmTimerTask(Timeline alarmAnimation) {
@@ -86,11 +86,7 @@ class AlarmScheduler {
                 clip = AudioSystem.getClip();
                 clip.open(audioInputStream);
                 clip.loop(Clip.LOOP_CONTINUOUSLY);
-            } catch (UnsupportedAudioFileException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (LineUnavailableException e) {
+            } catch (UnsupportedAudioFileException | LineUnavailableException | IOException e) {
                 e.printStackTrace();
             }
         }

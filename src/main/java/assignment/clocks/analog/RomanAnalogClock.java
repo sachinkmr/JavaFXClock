@@ -14,6 +14,4 @@ public class RomanAnalogClock extends AnalogClock {
             createAndAddTextNode(text, location);
         }
     }
-
-
 }

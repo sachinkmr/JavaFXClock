@@ -19,17 +19,18 @@ public class MirroredAnalogClock extends AnalogClock {
             createAndAddTextNode(text, location);
         }
     }
+
     @Override
     public void startClock() {
         getOrigin().toFront();
 
-        Timeline tl = new Timeline();
-        tl.setCycleCount(Animation.INDEFINITE);
-        tl.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
+        timeLine = new Timeline();
+        timeLine.setCycleCount(Animation.INDEFINITE);
+        timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
             hourProperty().setValue(-AbstractClock.getHours());
             minuteProperty().setValue(-AbstractClock.getMinutes());
             secondProperty().setValue(-AbstractClock.getSeconds());
         })));
-        tl.play();
+        timeLine.play();
     }
 }
