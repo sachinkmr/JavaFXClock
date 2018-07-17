@@ -33,10 +33,9 @@ public class AnalogClock extends Clock {
     }
 
     @Override
-    public void startClock() {
+    public void startClock(Timeline timeLine) {
         origin.toFront();
 
-        timeLine = new Timeline();
         timeLine.setCycleCount(Animation.INDEFINITE);
         timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
             hourProperty().setValue(Clock.getHours());
@@ -47,13 +46,13 @@ public class AnalogClock extends Clock {
     }
 
     @Override
-    public void paintClockFace() {
+    public void initClockUI() {
         paintDots();
         paintNumbers();
+        drawHands();
     }
 
-    @Override
-    public void drawHands() {
+    protected void drawHands() {
         // Drawing second hand
         Point2D endPoint = pointFromOrigin(0, clockFace.getRadius() * Factor.SECOND_HAND.value());
         secondHand = createHand(secondProperty().multiply(360 / 60), endPoint, 2);

@@ -1,16 +1,11 @@
 package assignment.clocks.analog;
 
 import assignment.clocks.Clock;
-import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.fxml.FXML;
 import javafx.geometry.Point2D;
-import javafx.geometry.Pos;
 import javafx.scene.Group;
-import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.Line;
@@ -18,9 +13,6 @@ import javafx.scene.shape.StrokeLineCap;
 import javafx.util.Duration;
 
 public class FuturisticClock extends AnalogClock {
-
-    @FXML
-    private Label f_time;
     private Arc hourHand;
     private Arc minuteHand;
     private Arc secondHand;
@@ -28,14 +20,10 @@ public class FuturisticClock extends AnalogClock {
     private double radius = 180;
 
     @Override
-    public void paintClockFace() {
+    public void initClockUI() {
         ticks = new Group();
         paintDots();
-        f_time.setMaxWidth(Double.MAX_VALUE);
-        AnchorPane.setLeftAnchor(f_time, 0.0);
-        AnchorPane.setRightAnchor(f_time, 0.0);
-        f_time.setAlignment(Pos.CENTER);
-
+        drawHands();
         this.getClockFace().setStroke(Color.TRANSPARENT);
         this.getClockFace().setFill(this.bgColorProperty().getValue());
     }
@@ -65,7 +53,6 @@ public class FuturisticClock extends AnalogClock {
         this.faceColorProperty().setValue(Color.MEDIUMSLATEBLUE);
         this.bgColorProperty().setValue(Color.TRANSPARENT);
     }
-
 
     @Override
     public void drawHands() {
@@ -108,8 +95,6 @@ public class FuturisticClock extends AnalogClock {
             secondHand.setEffect(new DropShadow(10, this.secondColorProperty().getValue()));
         });
         this.faceColorProperty().addListener((observable, oldValue, newValue) -> {
-            f_time.setTextFill(this.faceColorProperty().getValue());
-            f_time.setEffect(new DropShadow(10, this.faceColorProperty().getValue()));
             ticks.getChildren().forEach(tick -> {
                 Line line = (Line) tick;
                 line.setEffect(new DropShadow(10, this.faceColorProperty().getValue()));
@@ -120,15 +105,12 @@ public class FuturisticClock extends AnalogClock {
 
 
     @Override
-    public void startClock() {
-        timeLine = new Timeline(
-                new KeyFrame(Duration.millis(10), t -> {
-                    secondHand.setLength(-getSecondAngle());
-                    minuteHand.setLength(-getMinuteAngle());
-                    hourHand.setLength(-getHourAngle());
-                }));
-
-        timeLine.setCycleCount(Animation.INDEFINITE);
+    public void startClock(Timeline timeLine) {
+        timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
+            secondHand.setLength(-getSecondAngle());
+            minuteHand.setLength(-getMinuteAngle());
+            hourHand.setLength(-getHourAngle());
+        })));
         timeLine.play();
     }
 

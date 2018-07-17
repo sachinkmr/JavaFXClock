@@ -21,16 +21,16 @@ public class MirroredAnalogClock extends AnalogClock {
     }
 
     @Override
-    public void startClock() {
+    public void startClock(Timeline timeLine) {
         getOrigin().toFront();
 
-        timeLine = new Timeline();
         timeLine.setCycleCount(Animation.INDEFINITE);
         timeLine.getKeyFrames().add(new KeyFrame(Duration.millis(10), (event -> {
             hourProperty().setValue(-Clock.getHours());
             minuteProperty().setValue(-Clock.getMinutes());
             secondProperty().setValue(-Clock.getSeconds());
         })));
+
         timeLine.play();
     }
 }

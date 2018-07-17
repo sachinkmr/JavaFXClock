@@ -30,20 +30,20 @@ public class DigitalClock extends Clock {
     private Label am_pm;
 
     @Override
-    protected void startClock() {
+    public void startClock(Timeline timeLine) {
         // the digital clock updates once a second.
-        timeLine = new Timeline(
+        timeLine.getKeyFrames().addAll(
                 new KeyFrame(Duration.seconds(0),
-                        actionEvent -> drawHands()),
-                new KeyFrame(Duration.seconds(1))
-        );
+                        actionEvent -> drawNumbers()),
+                new KeyFrame(Duration.seconds(1)));
 
         timeLine.setCycleCount(Animation.INDEFINITE);
         timeLine.play();
     }
 
     @Override
-    public void paintClockFace() {
+    public void initClockUI() {
+        drawNumbers();
         bindColorProperties();
     }
 
@@ -59,8 +59,7 @@ public class DigitalClock extends Clock {
         am_pm.textFillProperty().bind(this.faceColorProperty());
     }
 
-    @Override
-    public void drawHands() {
+    public void drawNumbers() {
         hours.setText(getHourString());
         minutes.setText(getMinuteString());
         seconds.setText(getSecondString());

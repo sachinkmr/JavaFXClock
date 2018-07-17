@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="87.0" prefWidth="461.0" style="-fx-border-color: gray; -fx-border-width: 1;"
-            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="87.0" prefWidth="461.0"
+            style="-fx-border-color: gray; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/8">
     <children>
         <Rectangle fx:id="rectangleColor" arcHeight="5.0" arcWidth="5.0" fill="GREY" height="85.0" layoutX="1.0"
                    layoutY="1.0" stroke="GREY" strokeType="INSIDE" style="-fx-arc-width: 0;" width="32.0"/>

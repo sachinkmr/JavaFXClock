@@ -1,5 +1,6 @@
 package assignment.clocks;
 
+import javafx.animation.Animation;
 import javafx.animation.Timeline;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -16,7 +17,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public abstract class Clock implements Initializable {
-    protected Timeline timeLine;
+    private Timeline timeLine;
     @FXML
     private AnchorPane clockPane;
     private String name;
@@ -31,6 +32,9 @@ public abstract class Clock implements Initializable {
 
 
     protected Clock() {
+        timeLine = new Timeline();
+        timeLine.setCycleCount(Animation.INDEFINITE);
+
         // Setting clock color
         hourColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
         minuteColor = new SimpleObjectProperty<>(Color.valueOf("#6b6969"));
@@ -90,26 +94,20 @@ public abstract class Clock implements Initializable {
      */
     @Override
     public final void initialize(URL location, ResourceBundle resources) {
-        paintClockFace();
-        drawHands();
+        initClockUI();
         resetColors();
-        startClock();
+        startClock(timeLine);
     }
 
     /**
-     * Implement this Method to draw/paint clock face.
+     * Implement this Method to draw/paint clock UI.
      */
-    protected abstract void paintClockFace();
+    protected abstract void initClockUI();
 
     /**
-     * Implement this method to draw/paint clock hands
+     * Implement animation logic here with pre initialized timeline object
      */
-    protected abstract void drawHands();
-
-    /**
-     * Implement this method to start clock. Implement hand rotation logic here.
-     */
-    protected abstract void startClock();
+    protected abstract void startClock(Timeline timeLine);
 
     protected SimpleDoubleProperty hourProperty() {
         return hour;
